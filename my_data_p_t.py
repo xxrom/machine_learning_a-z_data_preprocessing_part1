@@ -39,3 +39,25 @@ X_train, X_test, y_train, y_test = train_test_split(
 # получается в train - данные по которым мы будем обучать нейронку
 # test - данные по которым мы будем проверять нейронку на работоспособность
 # test_size = 0.2 - соотношение 0.8(80%) - обучение и 0.2(20%) - тестирование
+
+
+# Feature Scaling
+from sklearn.preprocessing import StandardScaler
+sc_X = StandardScaler()
+X_train = sc_X.fit_transform(X_train)
+X_test = sc_X.transform(X_test)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
